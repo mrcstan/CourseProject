@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js"></script>
+    <!-- Use fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="PopupBox">
+      <input id="SearchBox" placeholder="Intelligent Search" id="SearchBox" type="search" autofocus></input>
+      <span id="resultCounter">0/0</span>
+      <button id="nextResult">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <button id="previousResult">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+      <button id="close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div>
+        <div class="Ranker">
+          <span>Ranking method: </span>
+          <input type="radio" id="rankerBM25" name="Ranker" value="BM25" checked/>
+          <label for="rankerBM25">BM25</label>
+          <input type="radio" id="rankerPLNVSM" name="Ranker" value="PLNVSM" />
+          <label for="rankerPLNVSM">PLNVSM</label>
+          <input type="radio" id="rankerExactMatch" name="Ranker" value="Exact Match" />
+          <label for="rankerExactMatch">Exact Match</label>
+        </div>
+        <div class="TextGranularity">
+          <span>Text Granularity: </span>
+          <input type="radio" id="textGranularityTextNodes" name="TextGranularity" value="Text Nodes" checked/>
+          <label for="textGranularityTextNodes">Text Nodes</label>
+          <input type="radio" id="textGranularitySentences" name="TextGranularity" value="Sentences" />
+          <label for="textGranularitySentences">Sentences</label>
+        </div>
+        <div class="Synonyms">
+          <label for="synonyms">Include synonyms in search? </label>
+          <input type="checkbox" id="synonyms">
+        </div>
+      </div>
+      <span></span>
+      <button id="like">
+        <i class="fas fa-thumbs-up"></i>
+      </button>
+      <button id="dislike">
+        <i class="fas fa-thumbs-down"></i>
+      </button>
+    </div>
+
+    <div id="Messages"></div>
+    <div id="LikeMessage"></div>
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.XxXIntelligentSearchWord {
+  /* background-color: aquamarine !important; */
+}
+
+.XxXIntelligentSearchCurrent > .XxXIntelligentSearchWord {
+  background-color: yellow !important;
+}
+
+.XxXIntelligentSearchHighlight {
+}
+
+.XxXIntelligentSearchCurrent {
+  background-color: cyan;
+}
